@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="839.0" prefWidth="1261.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="839.0" stroke="WHITE" strokeType="INSIDE" width="1261.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.10952380952380952">
+                     <stops>
+                        <Stop color="#4e94ed" />
+                        <Stop color="#7ced4a" offset="0.9923371647509578" />
+                        <Stop color="#76cd4e" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Label fx:id="temperatureLabel" layoutX="293.0" prefHeight="172.0" prefWidth="346.0" text="51° F" textFill="WHITE">
+               <font>
+                  <Font size="90.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="conditionImage" fitHeight="251.0" fitWidth="234.0" layoutX="40.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Resources/Icons/Weather/fog-day-xxl.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="conditionLabel" alignment="TOP_LEFT" layoutX="293.0" layoutY="146.0" prefHeight="172.0" prefWidth="412.0" text="Foggy" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="MyriadPro-Regular" size="59.0" />
+               </font>
+            </Label>
+            <Separator layoutY="317.0" prefHeight="31.0" prefWidth="1261.0" />
+            <Label fx:id="todaysHighLabel" layoutX="773.0" layoutY="34.0" prefHeight="41.0" prefWidth="311.0" text="Todays High: " textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="34.0" />
+               </font>
+            </Label>
+            <Label fx:id="todaysLowLabel" layoutX="773.0" layoutY="91.0" prefHeight="41.0" prefWidth="311.0" text="Todays Low:" textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="34.0" />
+               </font>
+            </Label>
+            <Label fx:id="windSpeedLabel" layoutX="773.0" layoutY="157.0" prefHeight="41.0" prefWidth="311.0" text="Windspeed:" textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="34.0" />
+               </font>
+            </Label>
+            <Label fx:id="windDirectionLabel" layoutX="773.0" layoutY="217.0" prefHeight="41.0" prefWidth="311.0" text="Wind Direction:" textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="34.0" />
+               </font>
+            </Label>
+            <Label fx:id="tomorrowLabel" layoutX="125.0" layoutY="348.0" text="Sunday:" textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="dayAfterTomorrowLabel" layoutX="552.0" layoutY="348.0" text="Monday:" textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="twoDaysAfterTomorrowLabel" layoutX="972.0" layoutY="348.0" text="Tuesday:" textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="36.0" />
+               </font>
+            </Label>
+            <Separator layoutX="409.0" layoutY="333.0" orientation="VERTICAL" prefHeight="513.0" prefWidth="6.0" />
+            <Separator layoutX="845.0" layoutY="333.0" orientation="VERTICAL" prefHeight="513.0" prefWidth="6.0" />
+            <Label fx:id="tomorrowsHighLabel" layoutX="43.0" layoutY="446.0" prefHeight="41.0" prefWidth="311.0" text="High: " textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="tomorrowsLowLabel" layoutX="43.0" layoutY="507.0" prefHeight="41.0" prefWidth="311.0" text="Low:" textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="dayAfterTomorrowsLowLabel" layoutX="477.0" layoutY="507.0" prefHeight="41.0" prefWidth="311.0" text="Low:" textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="daysAfterTomorrowsHighLabel" layoutX="477.0" layoutY="446.0" prefHeight="41.0" prefWidth="311.0" text="High: " textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="twoDaysAfterTomorrowsLowLabel" layoutX="907.0" layoutY="503.0" prefHeight="41.0" prefWidth="311.0" text="Low:" textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="twoDaysAfterTomorrowsHighLabel" layoutX="907.0" layoutY="442.0" prefHeight="41.0" prefWidth="311.0" text="High: " textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="tomorrowsConditionImage" fitHeight="149.0" fitWidth="149.0" layoutX="185.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Resources/Icons/Weather/fog-day-xxl.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="dayAfterTomorrowsConditionImage" fitHeight="149.0" fitWidth="149.0" layoutX="618.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Resources/Icons/Weather/fog-day-xxl.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="twoDaysAfterTomorrowsConditionImage" fitHeight="149.0" fitWidth="149.0" layoutX="1048.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Resources/Icons/Weather/fog-day-xxl.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="tomorrowsConditionsLabel" alignment="TOP_LEFT" layoutX="40.0" layoutY="569.0" prefHeight="83.0" prefWidth="311.0" text="Foggy" textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="dayAfterTomorrowsConditionLabel" alignment="TOP_LEFT" layoutX="477.0" layoutY="569.0" prefHeight="83.0" prefWidth="311.0" text="Foggy" textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="twoDaysAfterTomorrowsConditionLabel" alignment="TOP_LEFT" layoutX="907.0" layoutY="569.0" prefHeight="83.0" prefWidth="311.0" text="Foggy" textFill="WHITE">
+               <font>
+                  <Font name="MyriadPro-Regular" size="25.0" />
+               </font>
+            </Label>
+            <Separator layoutX="758.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="335.0" prefWidth="6.0" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
